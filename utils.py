@@ -18,7 +18,8 @@ def closer_to_target(a: int, b: int, target: int = 100) -> int | None:
         return 2
     elif player_2 > player_1:
         return 1
-    return None
+    else:
+        return None
 
 def tie_breaker() -> int:
     while True:
@@ -33,7 +34,7 @@ def tie_breaker() -> int:
 
 def turn_decision() -> str:
     choose = input("choose r for roll or p for pass: ")
-    if choose != "r" and choose != "p":
+    while choose != "r" and choose != "p":
         print("try again")
         choose = input("choose r for roll or p for pass: ")
     return choose

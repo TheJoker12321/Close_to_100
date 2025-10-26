@@ -1,4 +1,4 @@
-from game import play_game
+from game import *
 
 if __name__ == "__main__":
     play_game()
